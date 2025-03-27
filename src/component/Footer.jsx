@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Use Link from react-router-dom
 import { ArrowUp } from "lucide-react"; // Assuming you're using lucide-react for icons
-import "./Footer.css"; // Import CSS file
+import "./footer.css"; // Import CSS file
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -127,7 +127,7 @@ const Footer = () => {
             <span className="separator">|</span>
             <Link to="/privacy">Privacy</Link>
             <span className="separator">|</span>
-            <span className="copyright">© Go Kidogo 2022</span>
+            <p>&copy;{new Date().getFullYear()} Gokidogo</p>
           </div>
           <button className="scroll-top" onClick={scrollToTop}>
             <ArrowUp size={24} />

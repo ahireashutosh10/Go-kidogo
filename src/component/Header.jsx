@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link, NavLink } from "react-router-dom"; // Import NavLink
 import styles from "./Header.module.css"; // Import CSS module
 import logo from '../assets/logo-new.svg';
 
@@ -45,22 +44,56 @@ const Header = () => {
         </button>
 
         <nav className={`${styles["nav-menu"]} ${isMobileMenuOpen ? styles.active : ""}`}>
-          <Link to="/city" className={styles["nav-link"]}>
-            CITY
-          </Link>
-          <Link to="/our-partners" className={styles["nav-link"]}>
-            PARTNER
-          </Link>
-          <Link to="/about-us" className={styles["nav-link"]}>
-            ABOUT US
-          </Link>
-          <Link to="/our-solution" className={styles["nav-link"]}>
-            GOKIDO TOOL
-          </Link>
-          <Link to="/become-a-partner" className={styles["nav-link"]}>
-            CONTACT
-          </Link>
+          {/* CITY Link */}
+          <div className={styles["dropdown"]}>
+            <NavLink to="/city" className={styles["nav-link"]} activeClassName={styles.active}>
+              CITY
+            </NavLink>
+            {/* Dropdown Menu for Cities */}
+            <ul className={styles["dropdown-menu"]}>
+              <li>
+                <NavLink to="/city/BAD VILBEL" className={styles["dropdown-item"]} activeClassName={styles.active}>
+                  BAD VILBEL
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/city/HANAU" className={styles["dropdown-item"]} activeClassName={styles.active}>
+                  HANAU
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/city/MAINZ" className={styles["dropdown-item"]} activeClassName={styles.active}>
+                  MAINZ
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/city/BAD NAUHEIM" className={styles["dropdown-item"]} activeClassName={styles.active}>
+                  BAD NAUHEIM
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/city/FRANKFURT AM MAIN" className={styles["dropdown-item"]} activeClassName={styles.active}>
+                  FRANKFURT AM MAIN
+                </NavLink>
+              </li>
+            </ul>
+          </div>
 
+          {/* Other Navigation Links */}
+          <NavLink to="/partner" className={styles["nav-link"]} activeClassName={styles.active}>
+            PARTNER
+          </NavLink>
+          <NavLink to="/about" className={styles["nav-link"]} activeClassName={styles.active}>
+            ABOUT US
+          </NavLink>
+          <NavLink to="/gokido-tool" className={styles["nav-link"]} activeClassName={styles.active}>
+            GOKIDO TOOL
+          </NavLink>
+          <NavLink to="/contact" className={styles["nav-link"]} activeClassName={styles.active}>
+            CONTACT
+          </NavLink>
+
+          {/* Language Selector */}
           <div className={styles["language-selector"]}>
             <button className={styles["language-button"]} onClick={toggleDropdown}>
               German (DE)
@@ -82,19 +115,20 @@ const Header = () => {
 
             {isDropdownOpen && (
               <div className={styles["language-dropdown"]}>
-                <Link to="#" className={styles["dropdown-item"]}>
+                <NavLink to="#" className={styles["dropdown-item"]} activeClassName={styles.active}>
                   English (EN)
-                </Link>
-                <Link to="#" className={styles["dropdown-item"]}>
+                </NavLink>
+                <NavLink to="#" className={styles["dropdown-item"]} activeClassName={styles.active}>
                   German (DE)
-                </Link>
+                </NavLink>
               </div>
             )}
           </div>
 
-          <Link to="/login" className={styles["login-button"]}>
+          {/* Login Button */}
+          <NavLink to="/login" className={styles["login-button"]} activeClassName={styles.active}>
             Log in
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </header>
