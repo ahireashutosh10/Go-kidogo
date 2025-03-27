@@ -18,7 +18,7 @@ import Login from './pages/Login.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
-    <Route path='/' element={<Home />}/>
+     <Route index element={<Home />} />
     <Route path="city" element={<City />} />
       <Route path="our-partners" element={<Partner />} />
       <Route path="about-us" element={<About />} />
