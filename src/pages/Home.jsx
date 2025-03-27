@@ -12,7 +12,7 @@ import vegan from "../assets/9.jpg";
 import halal from "../assets/10.jpg";
 import Background from "../component/Background";
 import "./Home.css";
-import './home.css';
+// import './home.css';
 import Restau_card from "../component/Restau_cards";
 
 
