@@ -3,7 +3,7 @@ import React from 'react'
 const City = () => {
   return (
     <div>
-      
+      <h1>City called</h1>
     </div>
   )
 }

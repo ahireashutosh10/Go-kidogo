@@ -19,12 +19,12 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
      <Route index element={<Home />} />
-    <Route path="city" element={<City />} />
-      <Route path="our-partners" element={<Partner />} />
-      <Route path="about-us" element={<About />} />
-      <Route path="become-a-partner" element={<Contact />} />
-      <Route path="our-solution" element={<GokidoTool />} />
-      <Route path="login" element={<Login />} />
+    <Route path="City" element={<City />} />
+      <Route path="Partner" element={<Partner />} />
+      <Route path="About" element={<About />} />
+      <Route path="Contact" element={<Contact />} />
+      <Route path="GokidoTool" element={<GokidoTool />} />
+      <Route path="Login" element={<Login />} />
     </Route>
   )
 );
