@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"; // Use Link from react-router-dom
 import { ArrowUp } from "lucide-react"; // Assuming you're using lucide-react for icons
 import "./Footer.css"; // Import CSS file
 
+
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
