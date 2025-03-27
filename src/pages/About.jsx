@@ -26,16 +26,16 @@ export default function About() {
         We all met in a programming class. Of course we wanted to program fun games. After the first 2-3 meetings we talked about plastic and the "FRIDAYS-FOR-FUTURE" demos. We all agreed that it is also imperative that individuals reconsider their consumption patterns. This also includes the use of technologies and service offers.
         </p>
          <br/> 
-         <br/> 
+         
         <p>For many of our daily "conveniences" we could pay a very high price in the future.</p>
         <br/> 
-        <br/>
+        
        <p>The discussions were so moving and inspiring that our mentor suggested taking a small step towards a sustainable world together.</p>
        <br/> 
-       <br/>
+       
       <p>Through a scrum session and other product discussions, we came up with the idea of ​​coding a sustainable delivery portal. Go Kidogo is therefore a good example of the fact that we not only have to rethink technologies for even more convenience, but especially in the present time for a just and sustainable world.</p>
        <br/>
-       <br/>
+       
        <p>At Go Kidogo, we value the essentials: quality of the food, fairness towards our restaurant partners and sustainable packaging.</p>
       
       </div>
@@ -44,7 +44,7 @@ export default function About() {
       </div>
     </div>
    
-    <div className='other' style={{"margin-left": "60px"}}>
+    <div className='other' style={{"margin-left": "18%"}}>
           <h1 style={{ "color":"green"}}>Go Kidogo - Small steps, big changes.</h1>
           
           <p class="lead">The problem</p>
