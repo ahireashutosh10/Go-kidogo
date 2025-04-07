@@ -11,7 +11,7 @@ import City from './pages/City.jsx';
 import Partner from './pages/Partner.jsx';
 import GokidoTool from './pages/GokidoTool.jsx';
 import Login from './pages/Login.jsx';
-
+import Privacy from './pages/Privacy.jsx';
 
 
 // Create the router
@@ -23,8 +23,9 @@ const router = createBrowserRouter(
       <Route path="Partner" element={<Partner />} />
       <Route path="About" element={<About />} />
       <Route path="Contact" element={<Contact />} />
-      <Route path="GokidoTool" element={<GokidoTool />} />
+      <Route path="gokido-tool" element={<GokidoTool />} />
       <Route path="Login" element={<Login />} />
+      <Route path="Privacy" element={<Privacy />}/>
     </Route>
   )
 );

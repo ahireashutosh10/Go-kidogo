@@ -14,7 +14,7 @@ import Background from "../component/Background";
 import "./Home.css";
 // import './home.css';
 import Restau_card from "../component/Restau_cards";
-
+import ProcessFlow from "../component/ProcessFlow"
 
 const cardData = [
   { imgSrc: pizza, title: "Pizza" },
@@ -135,11 +135,18 @@ function Home() {
                 <h3>We Deliver to your Office</h3>
                 <p>Enjoy a tasty food in minutes!</p>
                 <a href="/restaurants" className="btn-1 gradient">Start Now!</a>
+                
               </div>
+              
             </div>
+            
           </div>
+          
+          
         </div>
+        <ProcessFlow/>
       </div>
+     
     </>
   );
 }

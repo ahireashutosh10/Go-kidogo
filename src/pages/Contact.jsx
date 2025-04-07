@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLifeRing, FaMapMarkerAlt, FaCloudUploadAlt } from "react-icons/fa";
 import "./Contact.css"; 
+import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   const contactInfo = [
@@ -27,6 +28,7 @@ const ContactSection = () => {
   ];
 
   return (
+    <>
     <div>
       {/* Background Image Section */}
       <div className="background-image1">
@@ -60,6 +62,8 @@ const ContactSection = () => {
         </div>
       </div>
     </div>
+    <ContactForm/>
+    </>
   );
 };
 
