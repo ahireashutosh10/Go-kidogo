@@ -1,7 +1,7 @@
 import React from "react";
 import './Application.css';
-import googlePlay from "./assets/gpay.png"; // Update with actual path
-import appStore from "./assets/astore.png"; // Update with actual path
+import googlePlay from "../assets/gpay.png"; // Update with actual path
+import appStore from "../assets/astore.png"; // Update with actual path
 
 const AppDownload = () => {
     return (

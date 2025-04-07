@@ -14,7 +14,8 @@ import Background from "../component/Background";
 import "./Home.css";
 // import './home.css';
 import Restau_card from "../component/Restau_cards";
-import ProcessFlow from "../component/ProcessFlow"
+import ProcessFlow from "../component/ProcessFlow";
+import Application from "../component/Application"
 
 const cardData = [
   { imgSrc: pizza, title: "Pizza" },
@@ -145,6 +146,7 @@ function Home() {
           
         </div>
         <ProcessFlow/>
+        <Application/>
       </div>
      
     </>
