@@ -1,4 +1,5 @@
-/* General Container */
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -96,7 +97,7 @@
 }
 
 /* Description Text Section */
-/* .GoKidogoUI {
+ .GoKidogoUI {
   text-align: left;
   padding: 50px;
   position: absolute;
@@ -116,28 +117,8 @@
   font-size: 18px;
   color: #666;
   line-height: 1.5;
-} */
-/* .GoKidogoUI {
-  text-align: left;
-  padding: 50px;
-  position: absolute;
-  top: 150px; 
-  left: 1100px; 
-  width: 500px; 
-}
+} 
 
-.GoKidogoUI h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: green;
-  margin-bottom: 10px;
-}
-
-.GoKidogoUI p {
-  font-size: 18px;
-  color: #666;
-  line-height: 1.5;
-} */
 .gokidogo-section {
   display: flex;
   justify-content: space-between;

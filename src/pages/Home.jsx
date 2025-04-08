@@ -105,14 +105,23 @@ function Home() {
               ))}
             </div>
           </div>
-          <button
+          {/* <button
             className="arrow arrow-right"
             onClick={nextSlide}
             aria-label="Next Slide"
             disabled={currentIndex + visibleCards >= totalCards}
           >
             <ChevronRightIcon className="icon" />
-          </button>
+          </button> */}
+
+
+<button className="arrow arrow-left" onClick={prevSlide} disabled={currentIndex === 0}>
+  <ChevronLeftIcon className="icon" />
+</button>
+<button className="arrow arrow-right" onClick={nextSlide}>
+  <ChevronRightIcon className="icon" />
+</button>
+
         </div>
       </div>
 
@@ -142,11 +151,12 @@ function Home() {
             </div>
             
           </div>
-          
-          
+          <ProcessFlow/>
+          <Application/>
+         
         </div>
-        <ProcessFlow/>
-        <Application/>
+       
+       
       </div>
      
     </>

@@ -6,8 +6,7 @@ import appStore from "../assets/astore.png"; // Update with actual path
 const AppDownload = () => {
     return (
         <section className="app-download"><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        
             <h2>Gokido Android & iOS Mobile Application</h2>
             <div className="app-buttons">
                 <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
