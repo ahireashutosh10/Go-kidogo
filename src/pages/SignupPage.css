@@ -1,0 +1,59 @@
+.signup-wrapper {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .form-section {
+    width: 35%;
+    padding: 40px;
+    overflow-y: auto;
+    background: white;
+  }
+  
+  .logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-form input,
+  .signup-form select {
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .signup-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .back-button {
+    background-color: #ccc;
+    margin-top: 10px;
+  }
+  
+  .image-section {
+    flex-grow: 1;
+    background-image: url('/image.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
