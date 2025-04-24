@@ -2,10 +2,17 @@
 import React from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const LoginModal = ({ isOpen, onClose }) => {
+  const navigate = useNavigate();
+
   if (!isOpen) return null;
 
+  const handleSignupRedirect = () => {
+    onClose();           // Close the login modal
+    navigate("/signup"); // Navigate to signup page
+  };
   return (
     <div className="overlay">
       <div className="modal">
@@ -32,7 +39,10 @@ const LoginModal = ({ isOpen, onClose }) => {
           <button type="submit" className="login-btn">Log In</button>
 
           <p className="signup-text">
-            Don’t have an account? <Link to="/signup">Sign up</Link>
+            Don’t have an account?{" "}
+            <span onClick={handleSignupRedirect} style={{ color: "blue", cursor: "pointer" }}>
+              Sign up
+            </span>
           </p>
         </form>
       </div>
