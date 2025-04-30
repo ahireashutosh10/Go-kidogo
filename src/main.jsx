@@ -11,6 +11,10 @@ import City from './pages/City.jsx';
 import Partner from './pages/Partner.jsx';
 import GokidoTool from './pages/GokidoTool.jsx';
 import Login from './pages/Login.jsx';
+import Imprint from './pages/Imprint.jsx';
+import Conditions from './pages/Conditions.jsx';
+import Cookie from './pages/Cookie.jsx';
+import Faq from './pages/Faq.jsx';
 import Privacy from './pages/Privacy.jsx';
 import SignupPage from './pages/SignupPage.jsx'; 
 
@@ -18,7 +22,9 @@ import SignupPage from './pages/SignupPage.jsx';
 
 // Create the router
 const router = createBrowserRouter(
+  
   createRoutesFromElements(
+    
     <Route path='/' element={<Layout />}>
      <Route index element={<Home />} />
     <Route path="City" element={<City />} />
@@ -27,6 +33,10 @@ const router = createBrowserRouter(
       <Route path="Contact" element={<Contact />} />
       <Route path="gokido-tool" element={<GokidoTool />} />
       <Route path="Login" element={<Login />} />
+      <Route path="imprint" element={<Imprint />} />
+      <Route path="conditions" element={<Conditions />} />
+      <Route path="cookie" element={<Cookie />} />
+      <Route path="faq" element={<Faq />} />
       <Route path="Privacy" element={<Privacy />}/>
       <Route path="Signup" element={<SignupPage />} />
       
