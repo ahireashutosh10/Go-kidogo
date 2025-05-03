@@ -33,6 +33,7 @@ const router = createBrowserRouter(
       <Route path="Contact" element={<Contact />} />
       <Route path="gokido-tool" element={<GokidoTool />} />
       <Route path="Login" element={<Login />} />
+     
       <Route path="imprint" element={<Imprint />} />
       <Route path="conditions" element={<Conditions />} />
       <Route path="cookie" element={<Cookie />} />

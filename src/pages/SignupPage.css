@@ -5,14 +5,14 @@
 }
 
 .form-section {
-  width: 40%;
+  width: 30%;
   padding: 40px;
   background-color: #f9f9f9;
   overflow-y: auto;
 }
 
 .image-section {
-  width: 60%;
+  width: 80%;
   background: #000;
 }
 
@@ -64,4 +64,12 @@ button {
   margin-top: 15px;
   text-align: center;
   font-size: 14px;
+}
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block;
 }
